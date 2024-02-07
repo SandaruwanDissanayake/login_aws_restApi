@@ -5,7 +5,7 @@ import { createConnection } from 'mysql2/promise';
 // import { config } from 'dotenv';
 
 // config();
-import 'dotenv/config';
+// import 'dotenv/config';
 
 
 
@@ -13,10 +13,11 @@ let db;
 try {
 
     db = await createConnection({
-        host: process.env.HOST,
-        user: process.env.USER_NAME,
-        database: process.env.DB_NAME,
-        password: process.env.DB_PASSWORD,
+        host: 'sql309.infinityfree.com',
+        user: "epiz_33882337",
+        database: "epiz_33882337_pc_master",
+        password: '4X9n28MKvmnK',
+        port: 3306,
     });
 
     console.log("Connected to the database!");
