@@ -2,9 +2,10 @@ import { createConnection } from 'mysql2/promise';
 
 // require("dotenv").config;
 
-import { config } from 'dotenv';
+// import { config } from 'dotenv';
 
-config();
+// config();
+import 'dotenv/config';
 
 
 
