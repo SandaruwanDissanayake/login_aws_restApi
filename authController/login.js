@@ -12,7 +12,7 @@ export const logIn = async(req, res) => {
     } else {
 
         try {
-            const [result, fields] = await db.query("SELECT * FROM `employee` WHERE `email` = ? AND `password` = ?", [email, password]);
+            const [result, fields] = await db.query("SELECT * FROM `user` WHERE `email` = ? AND `password` = ?", [email, password]);
             // console.log(result.length);
 
             if (result.length !== 0) {
